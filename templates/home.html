@@ -1,0 +1,29 @@
+<html>
+    <title>Home Page</title>
+    <body>
+
+        <h1>      WELCOME TO WORD COUNTER WEBSITE     </h1>
+        <h2>    Here you can enter your paragraph in the box below  </h2>
+        <br>
+        <a href="{% url 'about' %}">About</a>
+        <h2>    See About for more details  </h2>
+        
+        <br>
+        <br>
+        <form action="{% url 'count' %}">
+            <h2> 
+                <textarea name="usertext" id="" cols="130" rows="30">
+                </textarea>
+                
+            </h2>
+            <br>
+            <br>
+            <input type="submit" value = "Click to Submit!">
+
+        </form>
+        
+    </body>
+</html>
+
+
+

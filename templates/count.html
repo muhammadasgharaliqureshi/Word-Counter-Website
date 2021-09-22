@@ -1,0 +1,31 @@
+<html>
+    <title>
+        CountedResults
+    </title>
+
+   
+    <body>
+        <h1>Welcome to your Results section</h1>
+        <br>
+        <a href="{% url 'home' %}">Go Back to home page</a>
+        <br>
+    
+        <h3>Below are two Results......1 is orignal text you submitted and 2nd is counted words</h3>
+        <br>
+        <br>
+        <br>
+        <h2>Your Input</h2>
+            {{usertext}}
+        <br>
+        <br>
+        <h3>There {{count_No}} words that are counted in your text</h3>
+        
+        {% for wordOc, countOc in words %}
+        <h4>
+           Word ({{wordOc}}) ----> occured ----> ({{countOc}}) times
+        
+        </h4>
+        <br>
+        {% endfor %}
+    </body>
+</html>
