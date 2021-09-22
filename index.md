@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/muhammadasgharaliqureshi/Word-Counter-Website/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+##Word-Counter-Website
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A simple Django website prototype with functionality for understanding django flow.
 
-### Markdown
+For running this site do following.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+first make migrations by typing python manage.py migrate.
 
-```markdown
-Syntax highlighted code block
+migrations are not required in this project but to be on the safe side just do it.
 
-# Header 1
-## Header 2
-### Header 3
+then run it by followinng command.
 
-- Bulleted
-- List
+###python manage.py runserver
 
-1. Numbered
-2. List
+This will run your website on default ip and port i.e. 127.0.0.0:8000.
 
-**Bold** and _Italic_ and `Code` text
+you can run it to your own choiced ip and port by following.
 
-[Link](url) and ![Image](src)
-```
+###python manage.py runserver {ip}:{port}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+for this you would also need to add you {ip} in allowed_ip list in settings.py.
 
-### Jekyll Themes
+Enjoy and feel free to reach me out on asgharaliq99@gmail.com
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/muhammadasgharaliqureshi/Word-Counter-Website/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
